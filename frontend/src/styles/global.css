@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores UEMA */
+    --azul-escuro: #1e3a5f;
+    --azul-medio: #4a90e2;
+    --azul-hover: #357abd;
+    --azul-footer: #0a1929;
+    --branco: #ffffff;
+    --cinza-fundo: #f5f5f5;
+    --cinza-texto: #333333;
+    --cinza-claro: #666666;
+    --cinza-borda: #e0e0e0;
+    
+    /* Cores de status */
+    --success: #059669;
+    --danger: #dc2626;
+    --warning: #d97706;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+    background-color: var(--cinza-fundo);
+    color: var(--cinza-texto);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+input, select, textarea {
+    outline: none;
+    border: 1px solid var(--cinza-borda);
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--azul-medio);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+/* Botões */
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--azul-medio);
+    color: var(--branco);
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-hover);
+}
+
+.btn-secondary {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+.btn-secondary:hover {
+    background-color: #152a45;
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--branco);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--branco);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--cinza-borda);
+    color: var(--cinza-texto);
+}
+
+.btn-outline:hover {
+    background-color: var(--cinza-fundo);
+}
+
+/* Cards */
+.card {
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+th {
+    background-color: var(--cinza-fundo);
+    font-weight: 600;
+    color: var(--cinza-claro);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Status badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.badge-aguardando {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.badge-em_transito {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.badge-recebido {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge-arquivado {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cinza-texto);
+}
+
+/* Page header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: var(--branco);
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.modal-close {
+    background: none;
+    font-size: 24px;
+    color: var(--cinza-claro);
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--cinza-claro);
+}
+
+.empty-message {
+    text-align: center;
+    color: var(--cinza-claro);
+    padding: 40px;
+}
+
+/* Container padrão */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botão Warning (Amarelo/Laranja) */
+.btn-warning {
+    background-color: #f59e0b;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #d97706;
+}
+
+/* ============================================
+   TRANSIÇÃO SUAVE ENTRE PÁGINAS
+   ============================================ */
+
+/* Container principal com fade */
+.main-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Todas as páginas */
+.dashboard,
+.protocolos-page,
+.busca-ia-page,
+.relatorios-page,
+.setores-page,
+.usuarios-page,
+.protocolo-detalhes-page {
+    animation: pageSlide 0.3s ease-out;
+}
+
+@keyframes pageSlide {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards e elementos aparecem suavemente */
+.card {
+    animation: cardFade 0.4s ease-out;
+}
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Linhas da tabela aparecem em sequência */
+.table-responsive tbody tr {
+    animation: rowFade 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+.table-responsive tbody tr:nth-child(1) { animation-delay: 0.05s; }
+.table-responsive tbody tr:nth-child(2) { animation-delay: 0.1s; }
+.table-responsive tbody tr:nth-child(3) { animation-delay: 0.15s; }
+.table-responsive tbody tr:nth-child(4) { animation-delay: 0.2s; }
+.table-responsive tbody tr:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes rowFade {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Loading mais suave */
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,35 @@
+# Dependências
+node_modules/
+
+# Banco de dados
+*.db
+database.db
+
+# Arquivos de upload
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build do frontend
+frontend/dist/
+frontend/build/
+
+# Cache
+.cache/
+*.cache

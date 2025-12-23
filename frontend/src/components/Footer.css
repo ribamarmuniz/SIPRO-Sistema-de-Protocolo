@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.site-footer {
+    background-color: #0f1e44;
+    color: #ffffff;
+    padding: 38px 0;
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Parte Esquerda - Logo */
+.footer-left {
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.footer-logo {
+    height: 72px;
+    width: auto;
+}
+
+/* Parte Central - Texto (maior para caber em 6 linhas) */
+.footer-center {
+    flex: 1.5;
+    text-align: left;
+}
+
+.footer-center p {
+    margin: 0;
+    font-size: 11.2px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Parte Direita - Vazia */
+.footer-right {
+    flex: 0.7;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-left {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
+    .footer-right {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-footer {
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        height: 50px;
+    }
+
+    .footer-center p {
+        font-size: 10px;
+    }
+}

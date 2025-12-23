@@ -1,0 +1,160 @@
+.setores-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.setores-page .page-header h1 {
+    color: #1e3a5f;
+}
+
+/* Barra de busca */
+.search-bar {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 18px;
+}
+
+.search-bar input {
+    padding-left: 45px;
+    height: 48px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* Grid de setores */
+.setores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card do setor */
+.setor-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.setor-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.setor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.setor-sigla {
+    background-color: #337ab7;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.setor-acoes {
+    display: flex;
+    gap: 6px;
+}
+
+.setor-nome {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e3a5f;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.setor-descricao {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.setor-status {
+    margin-top: auto;
+}
+
+/* Badges */
+.badge-ativo {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge-inativo {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Ações */
+.btn-acao {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+.btn-editar {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.btn-editar:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.btn-excluir {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-excluir:hover {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+/* Textarea */
+.setores-page textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .setores-page .page-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .setores-page .page-header .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .setores-grid {
+        grid-template-columns: 1fr;
+    }
+}

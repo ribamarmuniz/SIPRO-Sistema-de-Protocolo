@@ -1,0 +1,97 @@
+.usuarios-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.usuarios-page .page-header h1 {
+    color: #1e3a5f;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Badges de Perfil */
+.badge-perfil-admin {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+
+.badge-perfil-operador {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.badge-perfil-usuario {
+    background-color: #0891b2;
+    color: #ffffff;
+}
+
+.badge-perfil-consulta {
+    background-color: #6b7280;
+    color: #ffffff;
+}
+
+/* Badges de Status */
+.badge-ativo {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge-inativo {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Ações */
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-acao {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.btn-editar:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.btn-excluir {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-excluir:hover {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .usuarios-page .page-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .usuarios-page .page-header .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

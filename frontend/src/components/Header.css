@@ -1,0 +1,466 @@
+/* Header.css */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Top */
+.header-top {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-social {
+    display: flex;
+    gap: 20px;
+}
+
+.header-social a {
+    color: #555;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-social a:hover {
+    color: #004a8d;
+    transform: translateY(-2px);
+}
+
+.header-top-center {
+    display: flex;
+    gap: 4px;
+}
+
+/* CORRIGIDO: Tons de azul solicitados */
+.header-btn-blue {
+    background-color: #337ab7;
+    color: white;
+    padding: 5px 14px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+}
+
+.header-btn-blue:hover {
+    background-color: #286090;
+}
+
+.header-top-right {
+    display: flex;
+    gap: 15px;
+}
+
+.header-link-gray {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-link-gray:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Header Main */
+.header-main {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 85px;
+    transition: transform 0.3s;
+}
+
+.header-logo img:hover {
+    transform: scale(1.02);
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.user-setor {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* User Avatar & Menu */
+.user-menu-wrapper {
+    position: relative;
+}
+
+.btn-user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #004a8d;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-user-avatar:hover {
+    transform: scale(1.05);
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 240px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.user-dropdown-header {
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-dropdown-header strong {
+    color: #333;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+.user-dropdown-header span {
+    font-size: 0.85rem;
+    color: #666;
+    word-break: break-all;
+}
+
+.user-dropdown-menu {
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.user-dropdown-menu li button {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #555;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.user-dropdown-menu li button:hover {
+    background-color: #f0f7ff;
+    color: #004a8d;
+}
+
+.user-dropdown-menu li.divider {
+    height: 1px;
+    background: #eee;
+    margin: 5px 0;
+}
+
+.user-dropdown-menu li button.text-danger {
+    color: #dc3545;
+}
+
+.user-dropdown-menu li button.text-danger:hover {
+    background-color: #fff5f5;
+}
+
+/* Header Nav */
+.header-nav {
+    background: #004a8d;
+    color: white;
+}
+
+.header-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 22px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    font-size: 0.95rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.15);
+}
+
+.nav-sistema {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Notification Styles */
+.notificacoes-wrapper {
+    position: relative;
+}
+
+.btn-notificacoes {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.btn-notificacoes:hover {
+    color: #004a8d;
+}
+
+.notificacoes-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #dc3545;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    min-width: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.notificacoes-dropdown {
+    position: absolute;
+    top: 130%;
+    right: -60px;
+    width: 380px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    z-index: 1001;
+}
+
+.notificacoes-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcfcfc;
+    border-radius: 8px 8px 0 0;
+}
+
+.notificacoes-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.btn-marcar-todas {
+    background: none;
+    border: none;
+    color: #004a8d;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.notificacoes-lista {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notificacao-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.notificacao-item:hover {
+    background: #f9f9f9;
+}
+
+.notificacao-item.nao-lida {
+    background: #f0f7ff;
+}
+
+.notificacao-item.nao-lida::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #004a8d;
+}
+
+.notificacao-icone {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.notificacao-conteudo {
+    flex: 1;
+}
+
+.notificacao-titulo {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.notificacao-mensagem {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+}
+
+.notificacao-tempo {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.btn-excluir-notif {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.notificacao-item:hover .btn-excluir-notif {
+    opacity: 1;
+}
+
+.btn-excluir-notif:hover {
+    color: #dc3545;
+}
+
+.notificacoes-vazio {
+    padding: 40px;
+    text-align: center;
+    color: #999;
+}
+
+.notificacoes-vazio svg {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    opacity: 0.3;
+}
+
+@media (max-width: 900px) {
+    .header-top, .header-logo, .user-info {
+        display: none !important;
+    }
+    
+    .nav-sistema {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .nav-menu li {
+        width: auto;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .notificacoes-dropdown {
+        position: fixed;
+        top: 60px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
+}

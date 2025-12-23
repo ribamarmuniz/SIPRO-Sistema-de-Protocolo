@@ -1,0 +1,152 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3a5f 0%, #4a90e2 100%);
+    padding: 20px;
+}
+
+.login-container {
+    background-color: var(--branco);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-logo {
+    margin-bottom: 24px;
+}
+
+.login-logo img {
+    height: 100px;
+    width: auto;
+}
+
+.login-container h2 {
+    color: var(--azul-escuro);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.login-subtitle {
+    color: var(--cinza-claro);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container .form-group {
+    margin-bottom: 16px;
+}
+
+.login-container input {
+    padding: 14px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--azul-medio);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 8px;
+}
+
+.btn-login:hover {
+    background-color: var(--azul-hover);
+}
+
+.btn-login:disabled {
+    background-color: var(--cinza-claro);
+    cursor: not-allowed;
+}
+
+/* Estilo do botão Esqueci Minha Senha */
+.forgot-password-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    color: #666;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+
+.forgot-password-btn:hover {
+    color: var(--azul-escuro);
+}
+
+.login-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--cinza-borda);
+}
+
+.login-footer p {
+    color: var(--cinza-claro);
+    font-size: 12px;
+}
+
+/* Estilo do Modal de Recuperação */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.modal-sm {
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+}
+
+.modal-text {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .login-logo img {
+        height: 80px;
+    }
+}

@@ -1,0 +1,355 @@
+.protocolos-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* Área de Filtros */
+.filtros-wrapper {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.busca-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.busca-form {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.busca-input-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.busca-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.busca-input-wrapper input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filtros-opcoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.filtro-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filtro-group label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.filtro-group select,
+.filtro-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.btn-limpar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Tabela e Badges */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.numero-protocolo {
+    font-weight: 600;
+    color: #004a8d;
+}
+
+.setor-badge {
+    background: #f0f2f5;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.setor-badge.destino {
+    background: #e8f0fe;
+    color: #1967d2;
+}
+
+/* Modal e Formulários */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-lg {
+    max-width: 650px;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-body {
+    padding: 25px;
+    overflow-y: auto;
+    max-height: 75vh;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #004a8d;
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* === ESTILO DE UPLOAD BONITO (CORRIGIDO E CENTRALIZADO) === */
+
+.hidden-input {
+    display: none;
+}
+
+.upload-area {
+    width: 100%;
+    display: block;
+}
+
+.upload-label {
+    width: 100%;
+    box-sizing: border-box;
+    /* Força o display flex e o alinhamento central */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    
+    border: 2px dashed #dbeafe;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-label:hover {
+    border-color: #004a8d;
+    background-color: #f0f7ff;
+}
+
+.upload-icon {
+    font-size: 2.5rem;
+    color: #004a8d;
+    margin-bottom: 10px;
+    background: #e0eaff;
+    width: 60px;
+    height: 60px;
+    
+    /* Centralização interna do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    /* Centralização externa (Segurança extra se o flex do pai falhar) */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-text {
+    text-align: center;
+    width: 100%;
+}
+
+.upload-text p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.upload-text span {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Arquivo Selecionado */
+.arquivo-selecionado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0fff4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.arquivo-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arquivo-icone {
+    font-size: 1.5rem;
+    color: #16a34a;
+    background: #dcfce7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arquivo-detalhes {
+    display: flex;
+    flex-direction: column;
+}
+
+.arquivo-nome {
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 0.95rem;
+}
+
+.arquivo-tamanho {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.btn-remover-arquivo {
+    background: #fee2e2;
+    color: #dc2626;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    font-size: 1.1rem;
+}
+
+.btn-remover-arquivo:hover {
+    background: #dc2626;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .busca-header {
+        flex-direction: column;
+    }
+    .filtros-opcoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
