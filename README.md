@@ -28,8 +28,8 @@ Siga os passos abaixo para rodar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 
 bash
-``git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
-cd sistema-protocolo-geral-uema``
+`git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+cd sistema-protocolo-geral-uema`
 2. Instalar Dependências
 Backend (Servidor):
 
