@@ -24,8 +24,8 @@ O objetivo do sistema é modernizar e digitalizar o trâmite de processos admini
 ## Instalação e Configuração
 
 Siga os passos abaixo para rodar o projeto em sua máquina local.
-
-```### 1. Clonar o Repositório
+```
+### 1. Clonar o Repositório
 
 bash
 git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
