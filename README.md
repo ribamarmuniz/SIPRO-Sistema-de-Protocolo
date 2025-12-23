@@ -28,21 +28,21 @@ Siga os passos abaixo para rodar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 
 bash
-git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
-cd sistema-protocolo-geral-uema
+``git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+cd sistema-protocolo-geral-uema``
 2. Instalar Dependências
 Backend (Servidor):
 
 Bash
 
-cd backend
-npm install
+``cd backend
+npm install``
 Frontend (Interface):
 
 Bash
-
+``
 cd ../frontend
-npm install
+npm install``
 3. Configuração de Credenciais (Obrigatório)
 Por questões de segurança, as senhas e chaves de API foram removidas deste código público. Para que o sistema funcione corretamente (especialmente o login e envio de e-mails), você deve abrir os arquivos abaixo e inserir suas próprias credenciais:
 
@@ -70,16 +70,16 @@ Você precisará de dois terminais abertos:
 Terminal 1 (Backend):
 
 Bash
-
+``
 cd backend
-npm start
+npm start``
 # O servidor iniciará na porta 3000
 Terminal 2 (Frontend):
 
 Bash
-
+``
 cd frontend
-npm run dev
+npm run dev``
 # O frontend iniciará (geralmente na porta 5173)
 Acesse o sistema no navegador através do link exibido no terminal do Frontend.
 
